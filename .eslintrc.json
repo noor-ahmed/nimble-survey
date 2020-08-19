@@ -23,6 +23,6 @@
     ],
     "rules": {
         "no-eval": "error",
-        "import/first": "error",
+        "import/first": "error"
     }
 }
