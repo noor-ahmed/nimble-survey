@@ -8,6 +8,7 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
+        "plugin:prettier/recommended",
         "standard"
     ],
     "parserOptions": {
@@ -21,5 +22,7 @@
         "react"
     ],
     "rules": {
+        "no-eval": "error",
+        "import/first": "error",
     }
 }
