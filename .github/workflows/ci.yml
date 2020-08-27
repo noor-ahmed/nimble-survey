@@ -28,7 +28,6 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - run: npm run lint-in-file
     - run: npm run stylelint
 
     - name: Run test
@@ -38,6 +37,6 @@ jobs:
 
     - name: Run Danger
       if: always()
-      run: npm run danger
+      run: yarn run danger
       env:
         GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
