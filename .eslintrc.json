@@ -7,6 +7,7 @@
   },
   "extends": [
     "eslint:recommended",
+    "@nimbl3/eslint-config-nimbl3",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
     "standard"
