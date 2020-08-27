@@ -3,7 +3,7 @@
 A simple React application, that consumes some  APIs written in Ruby. It will allow you to  
  1. Sign up to the system
  2. Sign in
- 3. Change the Password if yoy forget
+ 3. Change the Password if you forget
  4. Answer and sumbit your response to the a simple survey 
 
 ## [Doployed Here](https://sleepy-hugle-723d70.netlify.app/)
