@@ -3,12 +3,12 @@ const fs = require('fs');
 const stylelint = require('danger-plugin-stylelint');
 
 // Min 2 reviewers required
-const reviewersCount = danger.github.requested_reviewers.users.length;
-if (reviewersCount === 0) {
-  fail('Please add at least 2 reviewer');
-} else if (reviewersCount > 2) {
-  fail('Please get approval/review from at least 2 people');
-};
+// const reviewersCount = danger.github.requested_reviewers.users.length;
+// if (reviewersCount === 0) {
+//   fail('Please add at least 2 reviewer');
+// } else if (reviewersCount > 2) {
+//   fail('Please get approval/review from at least 2 people');
+// };
 
 // ESLINT
 const esLintFile = 'eslint-output.json';

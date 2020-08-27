@@ -38,6 +38,6 @@ jobs:
 
     - name: Run Danger
       if: always()
-      run: npm run danger
+      run: yarn run danger ci
       env:
         GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
