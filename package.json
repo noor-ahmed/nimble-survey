@@ -10,6 +10,7 @@
     "node-sass": "4.14.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "stylelint-config-sass-guidelines": "7.0.0"
   },
@@ -40,6 +41,7 @@
   },
   "devDependencies": {
     "@nimbl3/eslint-config-nimbl3": "2.1.1",
+    "axios": "^0.20.0",
     "danger": "10.4.0",
     "danger-plugin-eslint": "0.1.0",
     "eslint": "6.6.0",
