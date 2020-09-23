@@ -4,14 +4,10 @@ import Layout from '../basics/layout';
 import BackgroundImage from '../../images/background.png';
 
 export class Login extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Layout backgroundImage={BackgroundImage}>
-        <div className="base-container">
+        <div className="login-container">
           <div className="content">
             <Logo label={'logoLabel'} />
 
