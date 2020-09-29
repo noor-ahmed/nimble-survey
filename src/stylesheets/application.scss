@@ -1,9 +1,9 @@
-// Framework
-//@import 'vendor/bootstrap';
-//// functions
-//@import 'functions/sizing';
-//// Variables
-//@import 'variables';
+ //Framework
+@import 'vendor/bootstrap';
+// functions
+@import 'functions/sizing';
+// Variables
+@import 'variables';
 //// Base
 //@import 'base/layout';
 //@import 'base/fonts';
@@ -13,7 +13,7 @@
 @import 'components/background-layout';
 //@import 'components/form-button';
 //@import 'components/Auth/logo-auth';
-//@import 'components/Auth/form-input-group';
+@import 'components/login/form-group';
 //@import 'components/Auth/auth-alert';
 //// Screens
 @import 'screens/login';

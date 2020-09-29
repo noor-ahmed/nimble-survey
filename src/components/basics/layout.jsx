@@ -1,17 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Layout = ({ backgroundImage, children }) => {
+function Layout(props) {
   return (
     <div className="background-layout">
       <div
         className="background-layout__image"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${props.backgroundImage})` }}
         aria-label="background-layout-image"
       >
-        <div className="background-layout__overlay">{children}</div>
+        <div className="background-layout__overlay">{props.children}</div>
       </div>
     </div>
   );
+};
+
+Layout.prototype = {
+  backgroundImage: PropTypes.string,
+  children: PropTypes.string
 };
 
 export default Layout;

@@ -5,5 +5,59 @@
   justify-content: center;
   min-height: 100vh;
   padding: 0;
-  width: rem(320px);
+  width: 320px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+
+  position: absolute;
+  width: 320px;
+  height: 390px;
+  left: calc(50% - 320px/2);
+  top: calc(50% - 390px/2);
+}
+
+.form-group {
+  position: static;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 76.19%;
+
+  /* Small / Semi Bold */
+
+  font-family: Neuzeit S LT Std;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.24px;
+
+  /* Gray / White */
+
+  color: #FFFFFF;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  margin: 0px 8px;
+}
+
+.input {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
 }
