@@ -1,0 +1,21 @@
+.logo-base {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(24px);
+
+  &__img {
+    align-self: center;
+    margin: rem(0 24px 24px);
+  }
+
+  &__label {
+    align-self: stretch;
+    color: map-get($brand-white, 'primary');
+    font-size: map-get($font-sizes, 'lg');
+    line-height: rem(22px);
+    letter-spacing: -0.41px;
+    text-align: center;
+
+    opacity: 0.6;
+  }
+}

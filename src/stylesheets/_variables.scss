@@ -1,9 +1,14 @@
 // Colors
-$primary-color: #000 !default;
-$secondary-color: #fff !default;
+$brand-black: (
+  light: hsl(240, 11%, 9%),
+  primary: hsl(0, 0%, 0%)
+);
+
+$brand-white: (
+  primary: hsl(0, 0%, 100%)
+);
 
 $brand-gray: (
-  primary: hsl(240, 11%, 9%),
   transparent: hsla(0, 0%, 15%, 0.6)
 );
 
@@ -11,11 +16,12 @@ $brand-gray: (
 $font-sizes: (
   sm: 0.8125rem,
   md: 0.9375rem,
-  lg: 1.0625rem,
+  lg: 1.0625rem
 );
 
 // Font Weight
 $font-weight: (
   normal: 400,
+  semi: 600,
   bolder: 800
 );
