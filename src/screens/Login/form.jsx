@@ -14,7 +14,12 @@ function Form() {
         <label for="password" className="form-group__label">
           Password
         </label>
-        <input type="password" id="password" name="password" className="form-group__input" />
+        <div>
+          <input type="password" id="password" name="password" className="form-group__input" />
+          <a href="/forgot-password" className="form-group__forgot-password">
+            Forgot?
+          </a>
+        </div>
       </div>
 
       <div className="footer">

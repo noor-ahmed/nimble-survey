@@ -13,10 +13,12 @@
 
 // Screens
 @import 'screens/login';
+@import 'screens/forgot-password';
+
 
 // components
+@import 'components/alert';
 @import 'components/background-layout';
 @import 'components/form-group';
 @import 'components/logo-base';
 @import 'components/submit_button';
-
