@@ -25,6 +25,8 @@
   "rules": {
     "no-eval": "error",
     "import/first": "error",
-    "semi": [2, "always"]
+    "semi": [2, "always"],
+    "no-bracket-spacing": 1,
+    "space-before-function-paren": ["error", "never"]
   }
 }
