@@ -9,7 +9,7 @@ function Layout(props) {
         style={{ backgroundImage: `url(${props.backgroundImage})` }}
         aria-label="background-layout-image"
       >
-        <div className="background-layout__overlay">{props.children}</div>
+        <div className="background-layout__overlay">{ props.children }</div>
       </div>
     </div>
   );

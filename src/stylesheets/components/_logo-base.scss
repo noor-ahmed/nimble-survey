@@ -12,10 +12,9 @@
     align-self: stretch;
     color: map-get($brand-white, 'primary');
     font-size: map-get($font-sizes, 'lg');
-    line-height: rem(22px);
     letter-spacing: -0.41px;
-    text-align: center;
-
+    line-height: rem(22px);
     opacity: 0.6;
+    text-align: center;
   }
 }

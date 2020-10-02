@@ -7,10 +7,10 @@ import Form from './form';
 export class Login extends React.Component {
   render() {
     return (
-      <Layout backgroundImage={BackgroundImage}>
+      <Layout backgroundImage={ BackgroundImage }>
         <div className="container login-container">
           <div className="content">
-            <Logo label={'Sign in to Nimble'} />
+            <Logo label={ 'Sign in to Nimble' } />
             <Form />
           </div>
         </div>
