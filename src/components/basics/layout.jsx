@@ -15,9 +15,4 @@ function Layout(props) {
   );
 };
 
-Layout.prototype = {
-  backgroundImage: PropTypes.string,
-  children: PropTypes.string
-};
-
 export default Layout;
