@@ -18,4 +18,3 @@ describe('Lands on Login page', () => {
     expect(history.location.pathname).toBe('/');
   });
 });
-
