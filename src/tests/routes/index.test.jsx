@@ -11,7 +11,7 @@ describe('Lands on Login page', () => {
     const history = createMemoryHistory();
     render(
       <Router history={ history }>
-        <Route exact path="/" component={Login}></Route>
+        <Route exact path="/" component={ Login }></Route>
       </Router>
     );
 
