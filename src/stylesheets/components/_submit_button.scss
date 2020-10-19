@@ -8,7 +8,7 @@
   font-weight: map-get($font-weight, 'bolder');
 
   height: rem(55px);
-  left: calc(50% - 343px/2 - 0.5px);
+  left: calc(50% - rem(343px/2) - rem(0.5px));
   letter-spacing: -0.41px;
   top: calc(50% - 50px/2);
   width: 100%;

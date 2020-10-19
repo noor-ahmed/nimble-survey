@@ -7,15 +7,12 @@
 
   &__label {
     position: static;
-    left: 0%;
-    right: 0%;
-    top: 0%;
     bottom: 76.19%;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
+    font-style: map-get($font-weight, 'normal');;
+    font-weight: map-get($font-sizes, 'semi');
+    font-size: rem(15px);
+    line-height: rem(20px);
 
     display: flex;
     align-items: center;
@@ -36,13 +33,13 @@
     width: 100%;
     height: rem(55px);
     margin: auto;
-    padding: 0.375rem 0.75rem;
+    padding: rem(15px) rem(15px);
 
     color: map-get($brand-white, 'primary');
     font-weight: map-get($font-weight, 'normal');
     font-size: map-get($font-sizes, 'lg');
     line-height: rem(22px);
-    letter-spacing: -0.41px;
+    letter-spacing: rem(.41px);
 
     background: rgba(255, 255, 255, 0.18);
     border: transparent;
@@ -53,7 +50,6 @@
 
   &__input:focus {
     color: map-get($brand-white, 'primary');
-
     background: rgba(255, 255, 255, 0.18);
     outline: none;
     box-shadow: none;
