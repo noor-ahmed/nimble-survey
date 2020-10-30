@@ -1,3 +1,7 @@
 {
-  "extends": "stylelint-config-sass-guidelines"
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "scss/at-extend-no-missing-placeholder": null,
+    "order/properties-alphabetical-order": null
+  }
 }

@@ -1,0 +1,21 @@
+.background-layout {
+  height: 100vh;
+  width: 100vw;
+
+  &__image {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+
+    background: {
+      color: map-get($brand-black, 'primary');
+      size: cover;
+    }
+  }
+
+  &__overlay {
+    backdrop-filter: blur(rem(50px));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, map-get($brand-black, 'primary') 100%);
+    mix-blend-mode: normal;
+  }
+}
