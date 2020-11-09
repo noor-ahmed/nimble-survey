@@ -1,0 +1,27 @@
+.home-header {
+  @include header-container();
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__site-logo {
+    width: rem(134px);
+    height: rem(32px);
+  }
+
+  &__menu {
+    order: 2;
+    margin-left: auto;
+  }
+
+  &__user-image {
+    width: rem(60px);
+    height: rem(50px);
+    padding: rem(12px 12px 0);
+
+    border-radius: 70%;
+  }
+}
