@@ -11,10 +11,12 @@
 // mixins
 @import 'mixins/auth-container';
 @import 'mixins/home-container';
+@import 'mixins/day-details-container';
 
 // Screens
 @import 'screens/login';
 @import 'screens/forgot-password';
+@import 'screens/home';
 
 
 // components
@@ -24,3 +26,6 @@
 @import 'components/lazy-loader';
 @import 'components/logo-base';
 @import 'components/submit_button';
+@import 'components/day_details';
+@import 'components/home-header';
+@import 'components/blank-slate';
