@@ -2,7 +2,7 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import Home from '../../../screens/Home';
+import Home from 'screens/Home';
 
 describe('When users see the HomeScreen', () => {
   it('shows todays date', ()=> {
@@ -30,3 +30,4 @@ describe('When users see the HomeScreen', () => {
     expect(final_message).toBeInTheDocument();
   });
 });
+

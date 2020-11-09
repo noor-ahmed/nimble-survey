@@ -3,13 +3,13 @@
   padding-top: rem(250px);
 
   &__emoji {
-    font-size: rem(64px);
+    font-size: map-get($font-sizes, 'xxl');
   }
 
   &__message {
     color: map-get($brand-white, 'primary');
     font-weight: map-get($font-weight, 'bolder');
-    font-size: rem(28px);
+    font-size: map-get($font-sizes, 'xl');
     line-height: rem(34px);
   }
 }
