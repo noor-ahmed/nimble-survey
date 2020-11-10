@@ -15,7 +15,7 @@
   }
 
   &__container {
-    @include details-container();
+    @include day-details-container();
     position: relative;
 
     flex: 1 1 auto;
@@ -27,7 +27,7 @@
   }
 
   &__number {
-    color: map-get($brand-white, 'primary');
+    color: map-get($brand-gray, 'primary');
     font-size: map_get($font-sizes, 'sm');
     line-height: rem(20px);
 
@@ -38,8 +38,8 @@
     margin: 0;
     padding-top: rem(10px);
 
-    color: map-get($brand-white, 'primary');
-    font-size: map_get($font-sizes, 'xxl');
+    color: map-get($brand-black, 'primary');
+    font-size: map_get($font-sizes, 'lg');
     line-height: rem(41px);
   }
 

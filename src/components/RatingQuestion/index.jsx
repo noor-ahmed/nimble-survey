@@ -4,7 +4,7 @@ const RatingQuestion = ({ initialRating, ratingCount, ratingEmoji }) => {
   const [rating, setRating] = useState(initialRating);
   const [emoji, setEmoji] = useState('👍🏻');
   const [hover, setHover] = useState(null);
-  const thumbElements = [...Array(ratingCount || 5)];
+  const emojiElement = [...Array(ratingCount || 5)];
 
   useEffect(() => {
     switch (ratingEmoji) {
@@ -31,13 +31,12 @@ const RatingQuestion = ({ initialRating, ratingCount, ratingEmoji }) => {
 
   return (
     <div className="rating">
-      { thumbElements.map((thumb, index) => {
+      { emojiElement.map((thumb, index) => {
         const ratingValue = index + 1;
 
         return (
           <label key={ index }>
             <input
-              type="radio"
               className="rating__radio"
               value={ ratingValue }
               onClick={ () => setRating(ratingValue) }
