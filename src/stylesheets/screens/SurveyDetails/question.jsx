@@ -1,7 +1,6 @@
 import React from 'react';
 
 import ThumbRating from 'components/Rating';
-// import WheelSelect from 'components/WheelSelect';
 
 const Questions = () => {
   const question = 'How fulfilled did you feel during this WFH period?';
