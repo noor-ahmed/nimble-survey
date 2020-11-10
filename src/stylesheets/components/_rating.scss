@@ -12,13 +12,11 @@
     line-height: rem(34px);
     letter-spacing: rem(10px);
 
-    cursor: pointer;
+    cursor: grab;
     opacity: 0.5;
-
-    transition: color 200ms;
   }
 
   &__thumb--selected {
-    opacity: 1;
+    opacity: 2;
   }
 }
