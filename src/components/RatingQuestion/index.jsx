@@ -27,6 +27,7 @@ const RatingQuestion = ({ initialRating, ratingCount, ratingEmoji }) => {
         setEmoji('👍🏻');
       }
     }
+  // eslint-disable-next-line
   }, []);
 
   return (
@@ -36,11 +37,7 @@ const RatingQuestion = ({ initialRating, ratingCount, ratingEmoji }) => {
 
         return (
           <label key={ index }>
-            <input
-              className="rating__radio"
-              value={ ratingValue }
-              onClick={ () => setRating(ratingValue) }
-            />
+            <input className="rating__radio" value={ ratingValue } onClick={ () => setRating(ratingValue) }/>
             <span
               role="img"
               aria-label="thumbs"
