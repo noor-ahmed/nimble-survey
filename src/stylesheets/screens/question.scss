@@ -1,4 +1,4 @@
-.questions {
+.question {
   width: 100vw;
   height: 100vh;
 
@@ -9,7 +9,7 @@
     padding: rem(16px 16px 0);
   }
 
-  &__header-right {
+  &__header-control {
     order: 2;
     margin-left: auto;
   }
@@ -19,7 +19,7 @@
     position: relative;
 
     flex: 1 1 auto;
-    height: calc(100vh - 135px);
+    height: calc(100vh - #{rem(135px)});
   }
 
   &__details {

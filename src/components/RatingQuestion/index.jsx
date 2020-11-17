@@ -1,34 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const RatingQuestion = ({ initialRating, ratingCount, ratingEmoji }) => {
   const [rating, setRating] = useState(initialRating);
-  const [emoji, setEmoji] = useState('👍🏻');
+  const [emoji] = useState(initEmoji);
   const [hover, setHover] = useState(null);
   const emojiElement = [...Array(ratingCount || 5)];
 
-  useEffect(() => {
-    switch (ratingEmoji) {
-      case 'heart': {
-        setEmoji('❤️');
-
-        break;
-      }
-      case 'smiley': {
-        setEmoji('🙂');
-
-        break;
-      }
-      case 'star': {
-        setEmoji('⭐');
-
-        break;
-      }
-      default: {
-        setEmoji('👍🏻');
-      }
+  function initEmoji(ratingEmoji) {
+    switch(ratingEmoji) {
+      case 'heart':
+        return '❤️';
+      case 'smiley':
+        return '🙂';
+      case 'star':
+        return '⭐';
+      default:
+        return '👍🏻';
     }
-  // eslint-disable-next-line
-  }, []);
+  }
 
   return (
     <div className="rating">
@@ -43,8 +32,8 @@ const RatingQuestion = ({ initialRating, ratingCount, ratingEmoji }) => {
               aria-label="thumbs"
               className={
                 ratingValue <= (hover || rating)
-                  ? 'rating__thumb rating__thumb--selected'
-                  : 'rating__thumb'
+                  ? 'rating__emoji rating__emoji--selected'
+                  : 'rating__emoji'
               }
               onMouseEnter={ () => setHover(ratingValue) }
               onMouseLeave={ () => setHover(null) }

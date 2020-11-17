@@ -7,7 +7,7 @@
     display: none;
   }
 
-  &__thumb {
+  &__emoji {
     font-size: map-get($font-sizes, 'xxl');
     line-height: rem(34px);
     letter-spacing: rem(10px);
@@ -16,7 +16,7 @@
     opacity: 0.5;
   }
 
-  &__thumb--selected {
+  &__emoji--selected {
     opacity: 2;
   }
 }
