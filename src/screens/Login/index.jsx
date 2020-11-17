@@ -6,24 +6,25 @@ import Logo from '../../components/basics/logo';
 import BackgroundImage from '../../images/background.png';
 import Form from './form';
 import ApiConnector from './api_connector'
-const { handleSubmit, requestSuccess } = ApiConnector();
 
-export class Login extends React.Component {
-  render() {
-    if (requestSuccess) {
-      return <Redirect to={ '/' } />;
-    }
+const Login = () => {
+  const { handleSubmit, requestSuccess, error } = ApiConnector();
 
-    return (
-      <Layout backgroundImage={ BackgroundImage }>
-        <div className="container login-container">
-          <div className="content">
-            <Logo label={ 'Sign in to Nimble' } />
-
-            <Form onSubmitHandler={ handleSubmit } />
-          </div>
-        </div>
-      </Layout>
-    );
+  if (requestSuccess) {
+    return <Redirect to={ '/forgot-password' } />;
   }
-}
+
+  return (
+    <Layout backgroundImage={ BackgroundImage }>
+      <div className="container login-container">
+        <div className="content">
+          <Logo label={ 'Sign in to Nimble' } />
+
+          <Form onSubmitHandler={ handleSubmit } />
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default Login;
