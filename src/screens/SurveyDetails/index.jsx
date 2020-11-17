@@ -2,6 +2,7 @@
 import React from 'react';
 
 import RatingQuestion from '../../components/RatingQuestion';
+import NpsQuestion from '../../components/npsQuestion'
 
 export class Question extends React.Component {
   render() {
@@ -20,6 +21,9 @@ export class Question extends React.Component {
             <div className="questions__number">1/5</div>
             <h1 className="questions__title"> { question }</h1>
             <RatingQuestion initialRating={ 1 } ratingCount={ 5 } ratingEmoji="star" />
+            <div className="questions__number">2/5</div>
+            <h1 className="questions__title"> { question }</h1>
+            <NpsQuestion init={ 1 } final={ 10 } />
           </div>
         </div>
 
