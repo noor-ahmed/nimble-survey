@@ -14,10 +14,10 @@
 
     text-align: center;
   }
-  
+
   &__title {
     margin-bottom: rem(10px);
-
+    
     color: map-get($brand-white, 'primary');
     font-weight: map-get($font-weight, 'normal');
     font-size: map-get($font-sizes, 'small');
@@ -28,7 +28,6 @@
     color: map-get($brand-white, 'primary');
     font-weight: map-get($font-weight, 'normal');
     font-size: map-get($font-sizes, 'sm');
-
     opacity: 0.5;
   }
 }

@@ -13,12 +13,10 @@ export class ForgotPassword extends React.Component {
         <div className="container forgot-password-container">
           <div className="content">
             <Logo label={ 'Enter your email to receive instructions for resetting your password.' } />
-
             <Alert
               title="Check your email."
               description="We've emailed you instruction to reset your password."
             />
-
             <Form/>
           </div>
         </div>
