@@ -16,4 +16,13 @@
     top: calc(50% - 50px/2);
     width: 100%;
   }
+
+  &--close {
+    width: 28px;
+    height: 28px;
+    left: calc(50% - 28px/2);
+    top: calc(50% - 28px/2);
+
+    background: $brand-silver;
+  }
 }

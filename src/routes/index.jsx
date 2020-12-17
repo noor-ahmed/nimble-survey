@@ -2,10 +2,11 @@ import React from 'react';
 
 import { Switch, Route } from 'react-router-dom';
 
-import { Login } from '../screens/Login';
-import { ForgotPassword } from '../screens/ForgotPassword'
-import LazyLoader from '../components/LazyLoader'
-import { Home } from '../screens/Home'
+import { Login } from 'screens/Login';
+import { ForgotPassword } from 'screens/ForgotPassword'
+import LazyLoader from 'components/LazyLoader'
+import { Home } from 'screens/Home'
+import { Question } from 'screens/SurveyDetails'
 
 const RouteList = () => {
   return (
@@ -14,6 +15,7 @@ const RouteList = () => {
       <Route path="/forgot-password" component={ ForgotPassword }></Route>
       <Route path="/loader" component={ LazyLoader }></Route>
       <Route path="/home" component={ Home }></Route>
+      <Route path="/question" component={ Question }></Route>
     </Switch>
   );
 };
