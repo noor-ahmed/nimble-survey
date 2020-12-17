@@ -1,4 +1,4 @@
-.home-header {
+.app-header {
   @include header-container();
 
   &__logo {
@@ -20,7 +20,6 @@
   &__user-image {
     width: rem(60px);
     height: rem(50px);
-    padding: rem(12px 12px 0);
 
     border-radius: 70%;
   }

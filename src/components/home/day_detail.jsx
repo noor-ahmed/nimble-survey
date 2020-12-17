@@ -2,7 +2,7 @@ import React from 'react';
 
 import BlankSlate from './blank_slate'
 
-const DayDetails = () => {
+const DayDetail = () => {
   const date = new Date();
   const date_options = { weekday: 'long', month: 'long', day: 'numeric' };
   const today = date.toLocaleString('en-EN', date_options).toUpperCase();
@@ -16,4 +16,4 @@ const DayDetails = () => {
   );
 };
 
-export default DayDetails;
+export default DayDetail;

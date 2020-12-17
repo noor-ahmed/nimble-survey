@@ -1,14 +1,14 @@
 .day-detail {
   @include day-details-container();
   position: relative;
+  color: map-get($brand-white, 'primary');
+  font-weight: map-get($font-weight, 'bolder');
 
   flex: 1;
 
   &__date {
     margin: 0;
 
-    color: map-get($brand-white, 'primary');
-    font-weight: map-get($font-weight, 'bolder');
     font-size: map-get($font-sizes, 'md');
     line-height: rem(18px);
   }
