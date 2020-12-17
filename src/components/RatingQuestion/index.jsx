@@ -21,7 +21,7 @@ const RatingQuestion = ({ initialRating, ratingCount, ratingEmoji }) => {
 
   return (
     <div className="rating">
-      { emojiElement.map((thumb, index) => {
+      { emojiElement.map((icon, index) => {
         const ratingValue = index + 1;
 
         return (
