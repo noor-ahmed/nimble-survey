@@ -7,6 +7,7 @@ import ForgotPassword from 'screens/ForgotPassword'
 import LazyLoader from 'components/LazyLoader'
 import SurveyDetail from 'screens/Home/surveyList';
 import Home from 'screens/Home';
+import Question from 'screens/SurveyDetail/question';
 
 const RouteList = () => {
   return (
@@ -16,6 +17,7 @@ const RouteList = () => {
       <Route path="/survey/" component={ SurveyDetail } />
       <Route path="/loader" component={ LazyLoader }></Route>
       <Route path="/home" component={ Home }></Route>
+      <Route path="/question" component={ Question }></Route>
     </Switch>
   );
 };
