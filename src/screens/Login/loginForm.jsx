@@ -3,7 +3,12 @@ import React from 'react';
 import { Formik } from  'formik';
 import * as Yup from 'yup';
 
-const Form = ({ onSubmitHandler }) => {
+const LoginForm = ({ onSubmitHandler }) => {
+  const initialValues = {
+    email: '',
+    password: ''
+  };
+
   const validationSchema = Yup.object({
     email: Yup.string().email('Invalid email address').required('Required'),
     password: Yup.string().required('Required'),
@@ -11,6 +16,7 @@ const Form = ({ onSubmitHandler }) => {
 
   return (
     <Formik
+      initialValues={ initialValues }
       validationSchema={ validationSchema }
       onSubmit={ onSubmitHandler }
       validateOnChange={ false }
@@ -51,4 +57,4 @@ const Form = ({ onSubmitHandler }) => {
   );
 };
 
-export default Form;
+export default LoginForm;

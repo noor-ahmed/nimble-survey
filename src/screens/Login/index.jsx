@@ -1,16 +1,17 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 
-import Layout from '../../components/basics/layout';
-import Logo from '../../components/basics/logo';
-import BackgroundImage from '../../images/background.png';
-import Form from './form';
-import ApiConnector from './api_connector'
+import Layout from 'components/basics/layout';
+import Logo from 'components/basics/logo';
+import BackgroundImage from 'images/background.png';
+import LoginForm from 'screens/Login/loginForm';
+import Handler from 'screens/Login/handler';
 
 const Login = () => {
-  const { handleSubmit, requestSuccess, error } = ApiConnector();
+  const { handleSubmit, requestSuccess, error } = Handler();
 
   if (requestSuccess) {
+    console.log('hiii');
     return <Redirect to={ '/forgot-password' } />;
   }
 
@@ -20,7 +21,7 @@ const Login = () => {
         <div className="content">
           <Logo label={ 'Sign in to Nimble' } />
 
-          <Form onSubmitHandler={ handleSubmit } />
+          <LoginForm onSubmitHandler={ handleSubmit } />
         </div>
       </div>
     </Layout>
