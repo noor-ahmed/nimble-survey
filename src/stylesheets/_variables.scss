@@ -17,7 +17,11 @@ $brand-gray: (
 $font-sizes: (
   sm: rem(0.8125),
   md: rem(0.9375),
-  lg: rem(1.0625)
+  lg: rem(1.0625),
+  xl: x-large,
+  xxl: xx-large,
+  xxxl: 2.125rem,
+  xxxxl: 4rem
 );
 
 // Font Weight

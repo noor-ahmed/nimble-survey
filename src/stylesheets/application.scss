@@ -1,5 +1,7 @@
 // frameworks
 @import 'vendors/bootstrap';
+@import 'vendor/slick/slick';
+@import 'vendor/slick/slick-dots';
 
 // defaults
 @import 'variables';
@@ -14,7 +16,7 @@
 // Screens
 @import 'screens/login';
 @import 'screens/forgot-password';
-
+@import 'screens/survey-list';
 
 // components
 @import 'components/alert';
