@@ -6,7 +6,7 @@ import { Login } from 'screens/Login';
 import { ForgotPassword } from 'screens/ForgotPassword'
 import LazyLoader from 'components/LazyLoader'
 import SurveyDetail from 'screens/Home/surveyList';
-import { Home } from '../screens/Home';
+import { Home } from 'screens/Home';
 
 const RouteList = () => {
   return (
