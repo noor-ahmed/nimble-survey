@@ -8,10 +8,9 @@ import LoginForm from 'screens/Login/loginForm';
 import Handler from 'screens/Login/handler';
 
 const Login = () => {
-  const { handleSubmit, requestSuccess, error } = Handler();
+  const { handleSubmit, requestSuccess } = Handler();
 
   if (requestSuccess) {
-    console.log('hiii');
     return <Redirect to={ '/forgot-password' } />;
   }
 
