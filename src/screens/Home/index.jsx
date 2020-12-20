@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useContext } from 'react';
 
 import SurveyAdapter from 'adapters/surveyAdapter';
-import Loader from 'components/Loader';
+import Loader from 'components/LazyLoader';
 import { AuthContext } from 'contexts/auth';
-import { BackgroundProvider } from 'contexts/background';
+import BackgroundProvider from 'components/basics/layout';
 import Details from 'screens/Home/details';
 
 const Home = () => {

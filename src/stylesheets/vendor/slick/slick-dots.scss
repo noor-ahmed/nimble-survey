@@ -2,11 +2,11 @@
   bottom: rem(-35px);
   /* stylelint-disable-next-line */
   li.slick-active button::before {
-    color: map-get($brand-white, 'primary');
+    color: white;
   }
 
   li button::before {
-    color: map-get($brand-white, 'primary');
+    color: white;
 
     opacity: 20%;
   }

@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 
-import PageBackground from 'components/PageBackground';
+import PageBackground from 'components/basics/layout';
 import { BackgroundContext } from 'contexts/background';
-import BlankSlate from 'screens/Home/blankSlate';
-import Header from 'screens/Home/header';
+import BlankSlate from 'components/home/blank_slate';
+import Header from 'components/home/header';
 import SurveyList from 'screens/Home/surveyList';
 
+// eslint-disable-next-line react/prop-types
 const Details = ({ surveyResponse }) => {
   const backgroundContext = useContext(BackgroundContext);
 
