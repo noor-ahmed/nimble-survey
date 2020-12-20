@@ -1,20 +1,30 @@
 import React from 'react';
-import Layout from '../../components/basics/layout';
-import Logo from '../../components/basics/logo';
-import BackgroundImage from '../../images/background.png';
-import Form from './form';
+import { Redirect } from 'react-router-dom';
 
-export class Login extends React.Component {
-  render() {
-    return (
-      <Layout backgroundImage={ BackgroundImage }>
-        <div className="container login-container">
-          <div className="content">
-            <Logo label={ 'Sign in to Nimble' } />
-            <Form />
-          </div>
-        </div>
-      </Layout>
-    );
+import Layout from 'components/basics/layout';
+import Logo from 'components/basics/logo';
+import BackgroundImage from 'images/background.png';
+import LoginForm from 'screens/Login/loginForm';
+import Handler from 'screens/Login/handler';
+
+const Login = () => {
+  const { handleSubmit, requestSuccess } = Handler();
+
+  if (requestSuccess) {
+    return <Redirect to={ '/forgot-password' } />;
   }
-}
+
+  return (
+    <Layout backgroundImage={ BackgroundImage }>
+      <div className="container login-container">
+        <div className="content">
+          <Logo label={ 'Sign in to Nimble' } />
+
+          <LoginForm onSubmitHandler={ handleSubmit } />
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default Login;

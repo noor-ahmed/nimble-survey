@@ -1,0 +1,13 @@
+.slick-dots {
+  bottom: rem(-35px);
+  /* stylelint-disable-next-line */
+  li.slick-active button::before {
+    color: white;
+  }
+
+  li button::before {
+    color: white;
+
+    opacity: 20%;
+  }
+}

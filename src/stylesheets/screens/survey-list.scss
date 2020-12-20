@@ -1,0 +1,50 @@
+.survey-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: rem(32px);
+
+  &__image {
+    width: 100%;
+    height: rem(305px);
+
+    border-radius: rem(12px);
+  }
+
+  &__title {
+    margin-top: rem(32px);
+
+    color: map-get($brand-white, 'primary');
+    font-weight: map-get($font-weight, 'bolder');
+    font-size: map-get($font-sizes, 'xl');
+    line-height: rem(28px);
+  }
+
+  &__description {
+    margin-top: rem(8px);
+
+    color: map-get($brand-white, 'primary');
+    font-weight: map-get($font-weight, 'normal');
+    font-size: map-get($font-sizes, 'lg');
+    line-height: rem(22px);
+
+    opacity: 0.6;
+  }
+
+  &__navigation {
+    position: relative;
+    bottom: rem(72px);
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    float: right;
+    width: rem(56px);
+    height: rem(56px);
+
+    background-color: map-get($brand-white, 'primary');
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

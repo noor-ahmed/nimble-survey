@@ -1,5 +1,8 @@
 // frameworks
 @import 'vendors/bootstrap';
+@import 'vendor/slick/slick';
+@import 'vendor/slick/slick-dots';
+@import 'vendor/slick/sllick-slider';
 
 // defaults
 @import 'variables';
@@ -10,11 +13,15 @@
 
 // mixins
 @import 'mixins/auth-container';
+@import 'mixins/home-container';
+@import 'mixins/day-details-container';
+@import 'mixins/details-container';
 
 // Screens
+@import 'screens/home';
 @import 'screens/login';
 @import 'screens/forgot-password';
-
+@import 'screens/survey-list';
 
 // components
 @import 'components/alert';
@@ -23,3 +30,6 @@
 @import 'components/lazy-loader';
 @import 'components/logo-base';
 @import 'components/submit_button';
+@import 'components/day_details';
+@import 'components/home-header';
+@import 'components/blank-slate';
