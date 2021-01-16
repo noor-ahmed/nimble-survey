@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Switch, Route } from 'react-router-dom';
 
-import { Login } from '../screens/Login';
+import Login  from '../screens/Login';
 import { ForgotPassword } from '../screens/ForgotPassword';
 import LazyLoader from '../components/LazyLoader';
 const RouteList = () => {

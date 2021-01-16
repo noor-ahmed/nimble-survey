@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Formik } from  'formik';
+import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
 const LoginForm = ({ onSubmitHandler }) => {
@@ -24,12 +24,12 @@ const LoginForm = ({ onSubmitHandler }) => {
       className="row"
     >
       { ({ errors, isSubmitting }) => (
-        <form className="form">
+        <Form className="form">
           <div className="form-group__container">
             <label htmlFor="email" className="form-group__label">
               Email
             </label>
-            <input type="text" id='email' name="email" className="form-group__input"/>
+            <Field type="email" id='email' name="email" className="form-group__input"/>
           </div>
           { errors.email && <p className="validation-error">{ errors.email }</p> }
 
@@ -38,7 +38,7 @@ const LoginForm = ({ onSubmitHandler }) => {
               Password
             </label>
             <div>
-              <input type="password" id="password" name="password" className="form-group__input"/>
+              <Field type="password" id="password" name="password" className="form-group__input"/>
               <a href="/forgot-password" className="form-group__forgot-password">
                 Forgot?
               </a>
@@ -51,7 +51,7 @@ const LoginForm = ({ onSubmitHandler }) => {
               Sign in
             </button>
           </div>
-        </form>
+        </Form>
       ) }
     </Formik>
   );
