@@ -1,0 +1,15 @@
+.blank-slate {
+  text-align: center;
+  padding-top: rem(250px);
+
+  &__emoji {
+    font-size: rem(64px);
+  }
+
+  &__message {
+    color: map-get($brand-white, 'primary');
+    font-weight: map-get($font-weight, 'bolder');
+    font-size: rem(28px);
+    line-height: rem(34px);
+  }
+}
