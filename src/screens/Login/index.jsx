@@ -11,7 +11,7 @@ const Login = () => {
   const { handleSubmit, requestSuccess } = Handler();
 
   if (requestSuccess) {
-    return <Redirect to={ '/forgot-password' } />;
+    return <Redirect to={ '/home' } />;
   }
 
   return (
