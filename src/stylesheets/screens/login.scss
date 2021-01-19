@@ -5,3 +5,7 @@
 .form-login {
   @include make-row();
 }
+
+.validation-error {
+  color: map-get($brand-red, 'primary');
+}
