@@ -28,6 +28,7 @@
     "semi": [2, "always"],
     "no-bracket-spacing": 1,
     "space-before-function-paren": ["error", "never"],
+    "react/prop-types": "off",
     "react/jsx-curly-spacing": ["error", {
       "when": "always",
       "children": {
