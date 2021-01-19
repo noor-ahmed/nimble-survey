@@ -1,8 +1,8 @@
 // This class is for projection of the component
 import React from 'react';
 
-import RatingQuestion from '../../components/RatingQuestion';
-import NpsQuestion from '../../components/npsQuestion'
+import RatingQuestion from 'components/RatingQuestion';
+import NpsQuestion from 'components/npsQuestion';
 
 export class Question extends React.Component {
   render() {

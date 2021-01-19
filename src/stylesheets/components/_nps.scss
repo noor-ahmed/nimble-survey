@@ -13,7 +13,7 @@
     margin-right: auto;
     margin-left: auto;
 
-    border: rem(0.5px) solid map-get($brand-gray, 'primary');
+    border: rem(0.5) solid map-get($brand-gray, 'primary');
     border-radius: rem(12px);
   }
 
@@ -21,7 +21,7 @@
     height: rem(55px);
     margin: 0;
 
-    border-right: rem(0.5px) solid map-get($brand-gray, 'primary');
+    border-right: rem(0.5) solid map-get($brand-gray, 'primary');
   }
 
   &__number-label--no-border {

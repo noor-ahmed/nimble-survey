@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Background from '../../components/basics/layout';
-import DayDetails from '../../components/home/day_details';
-import Header from '../../components/home/header';
+import Background from 'components/basics/layout';
+import DayDetails from 'components/home/day_details';
+import Header from 'components/home/header';
 
 export class Home extends React.Component {
   render() {
